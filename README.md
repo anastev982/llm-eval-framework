@@ -61,9 +61,10 @@ llm-eval-framework/
 │   ├── summarization_articles.jsonl
 │   └── extraction_experience.jsonl
 └── logs/
-    └── experiments/        # Generated reports and logs
+    └── experiments/        # Generated reports and logs```
 
 Installation
+
 ```bash
 python -m venv venv
 source venv/bin/activate
@@ -100,5 +101,6 @@ ROUGE-1 measures lexical overlap and does not fully capture semantic similarity.
 The judge.py module contains an experimental LLM-as-a-judge approach,
 intended for future integration.
 ```
+
 
 
