@@ -1,3 +1,6 @@
+Research-focused evaluation framework.  
+> This project is intended for experimentation and benchmarking, not production deployment.
+
 # LLM Evaluation Framework
 
 An end-to-end LLM evaluation framework for benchmarking multiple large language models
@@ -59,6 +62,7 @@ llm-eval-framework/
 │   └── extraction_experience.jsonl
 └── logs/
     └── experiments/        # Generated reports and logs
+
 Installation
 bash
 python -m venv venv
@@ -68,27 +72,31 @@ Set your OpenAI API key as an environment variable:
 
 bash
 export OPENAI_API_KEY="your_api_key_here"
+
 Usage
+
 Run all tasks on one or more models:
 
 bash
 python main.py --model gpt-4o-mini,gpt-4o
+
 Run a single task:
 
 bash
 python main.py --task summarization --model gpt-4o
+
 Output
 Console summary of scores per model and task
-
 CSV files with low-scoring examples for error analysis
-
 HTML report with tables and visualizations saved under:
 
 bash
 logs/experiments/<experiment_id>/report.html
+
 Notes & Limitations
 ROUGE-1 measures lexical overlap and does not fully capture semantic similarity.
 
 The judge.py module contains an experimental LLM-as-a-judge approach,
 intended for future integration.
 ```
+
