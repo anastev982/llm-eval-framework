@@ -9,7 +9,7 @@ def generate_html_report(
     results: Dict[str, Dict[str, Any]],
     output_dir: str = "logs/report",
 ) -> str:
-    """Minimalan HTML report + Chart.js bar graf za rezultate po modelu/tasku."""
+    """Minimal HTML report + Chart.js bar graf za results by model/task."""
     if not results:
         raise ValueError("No results to report.")
 
@@ -17,7 +17,7 @@ def generate_html_report(
 
     out_path = os.path.join(output_dir, "report.html")
 
-    # --- 1) Osnovne liste: modeli i taskovi ---
+    # 1) Primary lists: models i tasks
     model_names = sorted(
         results.keys(),
         key=lambda m: avg_score(results[m]),
@@ -25,7 +25,7 @@ def generate_html_report(
         )
     task_names = list(next(iter(results.values())).keys())
 
-    # --- 2) HTML tabela (rows) ---
+    # 2) HTML table (rows) 
     rows = ""
     for model in model_names:
         scores = results[model]
@@ -42,7 +42,7 @@ def generate_html_report(
             f"</tr>"
         )
 
-    # --- 3) Chart.js podaci (chart_data -> js_datasets) ---
+    # --- 3) Chart.js data (chart_data -> js_datasets) ---
     chart_data = {task: [] for task in task_names}
     for task in task_names:
         for m in model_names:

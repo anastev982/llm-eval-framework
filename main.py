@@ -8,9 +8,7 @@ from utils.reporting import generate_html_report
 import os, webbrowser
 import json
 
-# ------------------------------
 # CLASSIFICATION TASK
-# ------------------------------
 
 def evaluate_classification(path: str, model: str):
     examples = list(load_jsonl(path))
@@ -44,9 +42,7 @@ def evaluate_classification(path: str, model: str):
     return acc
 
 
-# ------------------------------
 # SUMMARIZATION TASK
-# ------------------------------
 
 def evaluate_summarization(path: str, model: str):
     print("\nRunning summarization evaluation...\n")
@@ -111,9 +107,7 @@ def evaluate_summarization(path: str, model: str):
     return avg_f1
 
 
-# ------------------------------
 # EXTRACTION TASK
-# ------------------------------
 
 def evaluate_extraction(path: str, model: str, output_dir: str = "logs"):
     f1_scores = []
@@ -161,10 +155,8 @@ def evaluate_extraction(path: str, model: str, output_dir: str = "logs"):
     
     return avg_f1
 
-
-# ------------------------------
 # MAIN
-# ------------------------------
+
 
 def main():
     parser = argparse.ArgumentParser(description="LLM Evaluation Framework")
