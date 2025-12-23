@@ -1,5 +1,7 @@
-- .env, 
-- logs/, 
-- venv/, 
-- __pycache__/, 
-- *.csv.env
+# Environments
+venv/
+.venv/
+env/
+
+# Secrets
+.env
