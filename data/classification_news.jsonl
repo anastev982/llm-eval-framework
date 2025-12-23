@@ -1,0 +1,3 @@
+{"input": "The stock market fell sharply today due to inflation concerns.", "expected_label": "finance"}
+{"input": "A new species of fish was discovered in the Pacific Ocean.", "expected_label": "science"}
+{"input": "The national football team won their match yesterday.", "expected_label": "sports"}

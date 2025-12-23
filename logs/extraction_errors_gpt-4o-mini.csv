@@ -1,0 +1,2 @@
+input,pred,normalized_pred,gold,normalized_gold,f1
+She has been working in software engineering for about five years.,for about five years,for five year,five years,five year,0.8

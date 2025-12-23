@@ -1,0 +1,21 @@
+{
+  "experiment_id": "exp_20251223_113338",
+  "models": [
+    "gpt-4o-mini",
+    "gpt-4o"
+  ],
+  "task": "all",
+  "timestamp": "2025-12-23T11:34:01.635211",
+  "results": {
+    "gpt-4o-mini": {
+      "classification": 1.0,
+      "summarization": 0.48830409356725146,
+      "extraction": 1.0
+    },
+    "gpt-4o": {
+      "classification": 1.0,
+      "summarization": 0.5476190476190477,
+      "extraction": 1.0
+    }
+  }
+}

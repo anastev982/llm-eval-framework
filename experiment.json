@@ -1,0 +1,6 @@
+{
+  "experiment_id": "summarization_v2_promptA",
+  "models": ["gpt-4o-mini", "gpt-4o"],
+  "task": "all",
+  "timestamp": "2025-12-12T11:04:30"
+}
